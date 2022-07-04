@@ -15,8 +15,8 @@ Merci aux organisateurs pour ces challenges, et ce CTF qui s'est bien déroulé 
 - [Attrapez le](geoint/attrapez_le)
 
 #### Crypto
-- [To basics](to_basics)
-- [RSA Madness](rsa_madness)
+- [To basics](crypto/to_basics)
+- [RSA Madness](crypto/rsa_madness)
 
 
 
