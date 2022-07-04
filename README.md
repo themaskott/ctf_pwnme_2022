@@ -7,9 +7,12 @@ CTF sous format court (72h) organisé par l'école 2600 entre les 1er et 4 juill
 Merci aux organisateurs pour ces challenges, et ce CTF qui s'est bien déroulé sans problèmes de disponibilité particuliers.
 
 
+#### Forensic
+- [Chat](forensic/cat_story)
 
-
-
+#### GEOINT
+- [Vacances](geoint/vacances)
+- [Attrapez le](geoint/attrapez_le)
 
 ## End Game
 

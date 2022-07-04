@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <img src="geoint.png" />
+  <img src="geoint.PNG" />
 </p>
 
 
