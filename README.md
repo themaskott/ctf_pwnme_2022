@@ -19,6 +19,10 @@ Merci aux organisateurs pour ces challenges, et ce CTF qui s'est bien déroulé 
 - [RSA Madness](crypto/rsa_madness)
 - [Exponential machine](crypto/exponential_machine)
 
+#### Programmation
+- [On my way 1/3](prog/way_1)
+- [On my way 2/3](prog/way_2)
+
 
 ## End Game
 
