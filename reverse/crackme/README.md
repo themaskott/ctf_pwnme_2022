@@ -38,6 +38,7 @@ Mais :
 - patcher l'instruction suivante : `jz` en `jnz`, comme ça avec un input invalide la boucle va continuer sur tous les octets
 - lancer le binaire en débug dans IDA (faut préciser dans le menu patch que l'on lance la version patchée)
 - à chaque itération de la boucle noter la valeur contenu dans le registre contenant le flag
+- noter que la valeur de l'input est précédement réduite de 64, il faut donc ajouter 64 aux valeur du flag récupérées en mémoire
 
 
 ```
