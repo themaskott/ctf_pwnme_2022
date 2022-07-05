@@ -19,7 +19,7 @@ La robustesse de RSA reposant principalement sur la difficulté à factoriser N 
 
 Dans le chall, `N` est le produit de 32 entiers premiers de 32 bits.
 
-Du coup on devrait pouvoir le factoriser facilement et calculer la clef privée (inverse modulaire de e).
+Du coup on devrait pouvoir le factoriser facilement et calculer la clef privée (inverse modulaire de e modulo phi(n)).
 
 Cela se fait bien avec Sage, même en ligne si on ne veut pas l'instlaller (c'est assez lourd !) : https://sagecell.sagemath.org/
 
