@@ -72,7 +72,7 @@ La vulnérabilité vient de la façon dont est construit le tableau de pointeur 
 - si on appelle `0` c'est `puts`
 - si on appelle `1` c'est `get_input`
 
-En revanche si l'on appelle un indice plus grand ? Et bien le programme va aller chercher sur la stack l'adresse qui se trouve à `*functions[i]`
+En revanche si l'on appelle un indice plus grand ? Et bien le programme va aller chercher dans la bss l'adresse qui se trouve à `*functions[i]`
 
 
 ### Exploit
