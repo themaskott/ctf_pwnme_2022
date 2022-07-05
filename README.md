@@ -17,7 +17,7 @@ Merci aux organisateurs pour ces challenges, et ce CTF qui s'est bien déroulé 
 #### Crypto
 - [To basics](crypto/to_basics)
 - [RSA Madness](crypto/rsa_madness)
-
+- [Exponential machine](crypto/exponential_machine)
 
 
 ## End Game
