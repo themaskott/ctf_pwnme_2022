@@ -23,6 +23,12 @@ Merci aux organisateurs pour ces challenges, et ce CTF qui s'est bien déroulé 
 - [On my way 1/3](prog/way_1)
 - [On my way 2/3](prog/way_2)
 
+#### Reverse
+- [It's easy](reverse/easy)
+- [Depycted](reverse/depycted)
+- [Crackme](reverse/crackme)
+
+
 
 ## End Game
 
